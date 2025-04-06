@@ -93,10 +93,9 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 ## **`canales de la bot oficial`**
 
-|------|-------------|-------|
-| WhatsApp | Canal | [¡Click aquí!](https://whatsapp.com/channel/0029Vaqe1Iv65yDAKBYr6z0A) |
-| WhatsApp | de la bot  | [¡Click aquí!](https://whatsapp.com/channel/0029Vaqe1Iv65yDAKBYr6z0A) |
-| WhatsApp | Grupo Ofc | [¡Click aquí!](https://chat.whatsapp.com/DmaLM7iLSFKKi7RkqUkv71) |
+canal de la bot |[¡Click aquí!](https://whatsapp.com/channel/0029Vaqe1Iv65yDAKBYr6z0A) |
+| numero de la bot oficial  | [¡Click aquí!](51923549668) |
+| grupo donde encontrarás la bot [¡Click aquí!](https://chat.whatsapp.com/DmaLM7iLSFKKi7RkqUkv71) |
  
 
 ### **`🔱 Propietario`**
@@ -110,4 +109,4 @@ href="https://github.com/TOKIO5025"><img src="https://files.catbox.moe/4n2gjp.jp
 href="https://github.com/emer819adri"><img src="https://github.com/emer819adri.png" width="140" height="140" alt="emer819adri"/></a>
 
 
-[〘Powered By Team Infinite mods 〙]
+[〘Powered By 🐉𝙉𝙚𝙤𝙏𝙤𝙠𝙮𝙤 𝘽𝙚𝙖𝙩𝙨🐲〙]
