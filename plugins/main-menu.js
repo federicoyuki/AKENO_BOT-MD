@@ -7,7 +7,7 @@ import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
 try {        
 /*let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}*/
-let { exp, dragones, level, role } = global.db.data.users[m.sender]
+let { exp, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 let name = await conn.getName(m.sender)
 let _uptime = process.uptime() * 1000
@@ -54,7 +54,6 @@ let menu = `𔓕꯭  ꯭ 𓏲꯭֟፝੭ 𝘼𝙠𝙚𝙣𝙤 𝙝𝙞𝙢
 ‎┏━━⪩「 𝐈𝐍𝐅𝐎 𝐃𝐄 𝐔𝐒𝐔𝐀𝐑𝐈𝐎 」⪨
 ┃❂ ⧼👤⧽ *Cliente:* ${name}
 ┃❂ ⧼✨⧽ *Exp:* ${exp}
-┃❂ ⧼💴⧽ *yenes:* ${yenes}
 ┃❂ ⧼🌟⧽ *Nivel:* ${level}
 ┃❂ ⧼⚜️⧽ *Rango:* ${role}
 ┗━━━━━━━━━━━━━━━━━⪩
