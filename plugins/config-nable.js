@@ -21,6 +21,9 @@ ${usedPrefix + command} audios
 ${usedPrefix + command} modoadmin
 ${usedPrefix + command} antifake
 ${usedPrefix + command} antibot
+${usedPrefix + command} antiarabe
+${usedPrefix + command} antivirtuales
+
 
 👑 ~OPCIONES PARA MI PROPIETARIO~
 
@@ -54,6 +57,14 @@ throw false
 }
 chat.welcome = isEnable
 break          
+
+    case 'antiarabe': case 'arabes': case 'antiarabes': case 'rechazararabes':
+      if (m.isGroup && !(isAdmin || isOwner)) {
+        global.dfail('admin', m, conn)
+        throw false
+      }
+      chat.antiArabe = isEnable
+      break
 
 case 'autoaceptar': case 'aceptarnuevos':
 if (!m.isGroup) {
