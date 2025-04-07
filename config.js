@@ -92,7 +92,7 @@ global.gp1 = 'https://whatsapp.com/channel/0029Vaqe1Iv65yDAKBYr6z0A' //Grupo
 global.gp2 = 'https://whatsapp.com/channel/0029Vaqe1Iv65yDAKBYr6z0A'//
 global.comunidad1 = 'https://whatsapp.com/channel/0029Vaqe1Iv65yDAKBYr6z0A' //Comunidad 𝘼𝙠𝙚𝙣𝙤 𝙝𝙞𝙢𝙚𝙟𝙞𝙢𝙖-𝘽𝙊𝙏
 global.channel = 'https://whatsapp.com/channel/0029Vaqe1Iv65yDAKBYr6z0A' //Canal Oficial
-global.channel2 = 'https://whatsapp.com/channel/0029Vaqe1Iv65yDAKBYr6z0A' //Canal test
+global.channel2 = 'https://whatsapp.com/channel/0029VbB8ooKK5cD7K3akFP35' //Canal test
 global.yt = 'https://youtube.com/@kakaroto-bot?si=dRYFi-dAw8H_mgGI' //Canal De Youtube
 global.md = 'https://github.com/TOKIO5025' //Github Oficial
 global.correo = 'albertodovi100@gmail.com'
