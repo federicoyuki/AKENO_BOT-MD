@@ -85,22 +85,7 @@ Si después de instalar el bot en Termux y iniciar la session del bot (el numero
 npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
 
----
-
-<details>
- <summary><b> â¤ï¸ servidor  </b></summary>
-
-* [`Dash`](https://test.crxsmods.site)
-* Canal de WhatsApp [`Canal Sky`](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
-* Comunidad Sky [`Click`](https://chat.whatsapp.com/KGPhTIfgOzZCMNqoc3R7OW)
-
----
-
-
-
-</details>
-
----
+--
 
 ## **`canales de la bot oficial`**
 
