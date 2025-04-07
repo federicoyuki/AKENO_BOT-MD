@@ -14,16 +14,15 @@
 
  
 
-#### **`Instalasion desde termux `**
+#### **`Instalasion desde cluod Shell `**
 
 <details>
  <summary><b> 👉 Click para los ver Comandos</b></summary>
 
-#### **🪄 Instalación manual por termux**
+#### **🪄 Instalación manual por cloud Shell**
 > copie y peguen en termux uno por uno 
  ```bash
-termux-setup-storage
-```
+
 
 ```bash
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
