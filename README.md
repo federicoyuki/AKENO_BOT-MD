@@ -25,7 +25,6 @@
 
 
 ```bash
-
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 
