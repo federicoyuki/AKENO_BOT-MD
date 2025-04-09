@@ -20,7 +20,7 @@
  <summary><b> 👉 Click para los ver Comandos</b></summary>
 
 #### **🪄 Instalación manual por cloud Shell**
-> copie y peguen en termux uno por uno 
+> copie y peguen en cluod Shell uno por uno 
  ```bash
 
 
