@@ -100,14 +100,13 @@ href="https://test.crxsmods.site"><img src="https://qu.ax/DxVXK.jpg" height="125
 
 <div align=>
 
-[![YouTube](https://img.shields.io/badge/SkyUltraPlus-Host-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/fZbcCLpSH6Y?si=1sDen7Bzmb7jVpAI)
  
 
 <details>
  <summary><b> ❤️servidor EdraCloud
 Hosting</b></summary>
 
-* Dash Sky[`Dash`](https://test.crxsmods.site)
+* Dash edraCloud[`Dash`](https://test.crxsmods.site)
 * Canal de WhatsApp [`Canal EdraCloud
 
 ---
