@@ -1,54 +1,35 @@
-import fetch from "node-fetch";
+import axios from 'axios'
 
-// Mapa para llevar el control de las sesiones
-let imageSessions = new Map();
+let handler = async (m, { conn, usedPrefix, command }) => {
+  let res = (await axios.get(`https://raw.githubusercontent.com/davidprospero123/api-anime/main/BOT-JSON/Messi.json`)).data  
+  let url = await res[Math.floor(res.length * Math.random())]
 
-const imageHandler = async (m, { conn, command, usedPrefix }) => {
-    // Obtener sesión de la conversación
-    let session = imageSessions.get(m.chat) || { lastApi: "" };
-
-    // Definir las APIs disponibles
-    const api1 = "https://raw.githubusercontent.com/davidprospero123/api-anime/main/BOT-JSON/Messi.json";
-
-    // Alternar entre las dos APIs
-    const apiUrl = session.lastApi === api1 ? api2 : api1;
-
-    try {
-        const response = await fetch(apiUrl);
-        if (!response.ok) throw new Error("No se pudo obtener la imagen");
-
-        const imageBuffer = await response.buffer();
-
-        // Cambiar la API para la siguiente vez
-        session.lastApi = apiUrl;
-        imageSessions.set(m.chat, session);
-
-        // Crear botón para obtener otra imagen
-        const buttons = [
-            {
-                buttonId: `${usedPrefix}messi`,
-                buttonText: { displayText: "⭐ Ver otra imagen💥" },
-                type: 1
-            }
-        ];
-
-        await conn.sendMessage(
-            m.chat,
-            {
-                image: imageBuffer,
-                caption: " Aquí tienes tu imagen",
-                buttons: buttons,
-                viewOnce: true
-            },
-            { quoted: m }
-        );
-    } catch (error) {
-        console.error(error);
-        conn.reply(m.chat, "❌ Error al obtener la imagen", m);
+  const buttons = [
+    {
+      buttonId: `${usedPrefix + command}`,
+      buttonText: { displayText: "🔄 Ver otra 🔄" },
+      type: 1
+    },
+    {
+      buttonId: `${usedPrefix}menu`,
+      buttonText: { displayText: "📜 Menú" },
+      type: 1
     }
-};
+  ]
 
-// Asignar comando "girls"
-imageHandler.command = /^messi$/i;
+  const buttonMessage = {
+    image: { url: url },
+    caption: "*Messi*",
+    footer: "🐉 𝙉𝙚𝙤𝙏𝙤𝙠𝙮𝙤 𝘽𝙚𝙖𝙩𝙨 🐲",
+    buttons: buttons,
+    headerType: 4
+  }
 
-export default imageHandler;
+  await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
+}
+
+handler.help = ['messi']
+handler.tags = ['anime']
+handler.command = /^(messi)$/i
+
+export default handler
