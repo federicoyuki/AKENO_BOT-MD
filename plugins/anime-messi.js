@@ -1,13 +1,54 @@
-import axios from 'axios'
+import fetch from "node-fetch";
 
-let handler = async(m, { conn, usedPrefix, command }) => {
-let res = (await axios.get(`https://raw.githubusercontent.com/davidprospero123/api-anime/main/BOT-JSON/Messi.json`)).data  
-let url = await res[Math.floor(res.length * Math.random())]
-conn.sendFile(m.chat, url, 'error.jpg', `*Messi*`, m, null, rcanal)} 
-//conn.sendButton(m.chat, "*Messi*", author, url, [['⚽ NEXT ⚽', `${usedPrefix + command}`]], m)}
+// Mapa para llevar el control de las sesiones
+let imageSessions = new Map();
 
-handler.help = ['messi']
-handler.tags = ['anime']
-handler.command = /^(messi)$/i
+const imageHandler = async (m, { conn, command, usedPrefix }) => {
+    // Obtener sesión de la conversación
+    let session = imageSessions.get(m.chat) || { lastApi: "" };
 
-export default handler
+    // Definir las APIs disponibles
+    const api1 = "https://raw.githubusercontent.com/davidprospero123/api-anime/main/BOT-JSON/Messi.json";
+
+    // Alternar entre las dos APIs
+    const apiUrl = session.lastApi === api1 ? api2 : api1;
+
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) throw new Error("No se pudo obtener la imagen");
+
+        const imageBuffer = await response.buffer();
+
+        // Cambiar la API para la siguiente vez
+        session.lastApi = apiUrl;
+        imageSessions.set(m.chat, session);
+
+        // Crear botón para obtener otra imagen
+        const buttons = [
+            {
+                buttonId: `${usedPrefix}messi`,
+                buttonText: { displayText: "⭐ Ver otra imagen💥" },
+                type: 1
+            }
+        ];
+
+        await conn.sendMessage(
+            m.chat,
+            {
+                image: imageBuffer,
+                caption: " Aquí tienes tu imagen",
+                buttons: buttons,
+                viewOnce: true
+            },
+            { quoted: m }
+        );
+    } catch (error) {
+        console.error(error);
+        conn.reply(m.chat, "❌ Error al obtener la imagen", m);
+    }
+};
+
+// Asignar comando "girls"
+imageHandler.command = /^messi$/i;
+
+export default imageHandler;
