@@ -1,3 +1,7 @@
+//codigo de +504 9373-2693 y de 50248019799
+
+
+
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, args, text }) => {
