@@ -54,6 +54,9 @@ let regbot = `👤 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗢 👤
 
 ᴠᴇʀɪғɪᴄᴀ ᴛᴜ ʀᴇɢɪᴛʀᴏ ᴀϙᴜɪ:
 ${channel2}
+
+gracias por usar la bot si quieres usar la bot oficial unete l grupo donde esta la bot 
+https://chat.whatsapp.com/DmaLM7iLSFKKi7RkqUkv71
 •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
 ${packname}`
 await conn.sendMini(m.chat, '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰', textbot, regbot, imagen1, imagen1, channel, m)
@@ -83,6 +86,6 @@ renderLargerThumbnail: false
 }
 handler.help = ['reg']
 handler.tags = ['rg']
-handler.command = ['verify', 'verificar', 'reg', 'register', 'registrar'] 
+handler.command = ['verify', 'r', 'verificar', 'reg', 'register', 'registrar'] 
 
 export default handler
