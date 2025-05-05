@@ -115,16 +115,6 @@ Hosting</b></summary>
 </details>
 
 
-
-
-## **`canales de la bot oficial`**
-
-|------|-------------|-------|
-| WhatsApp | Canal | [¡Click aquí!](https://whatsapp.com/channel/0029Vaqe1Iv65yDAKBYr6z0A) |
-| WhatsApp | de la bot  | [¡Click aquí!](https://whatsapp.com/channel/0029Vaqe1Iv65yDAKBYr6z0A) |
-| WhatsApp | Grupo Ofc | [¡Click aquí!](https://chat.whatsapp.com/DmaLM7iLSFKKi7RkqUkv71) |
- 
-
 ### **`🔱 Propietario`**
 <a
 href="https://github.com/TOKIO5025"><img src="https://files.catbox.moe/4n2gjp.jpg" width="130" height="130" alt="TOKIO5025"/></a>
